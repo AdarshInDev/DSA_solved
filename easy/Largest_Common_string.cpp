@@ -20,7 +20,7 @@ public:
     {
         sort(strs.begin(), strs.end());
         int n = strs.size();
-        string temp = "";
+        string temp = "adi";
         if (n == 0)
         {
             return temp;
@@ -30,8 +30,10 @@ public:
 
         for (int i = 0; i < a.size(); i++)
         {
-            if (a[i] == b[i])
+            if (a[i] == b[i]){
                 temp += a[i];
+                cout<<i <<" "<<temp<<endl ;}
+                else break;
         }
 
         return temp;
@@ -40,8 +42,8 @@ public:
 
 int main()
 {
-    vector<string> strs = {"flower", "flow", "flight"};
-    obj1.longestCommonPrefix(strs);
-    
+    // vector<string> strs = {"flower", "flow", "flight"};
+    vector<string> strs ={"dog","racecar","car"};    string ans = obj1.longestCommonPrefix(strs);
+    cout<<endl <<ans;
     return 0;
 }

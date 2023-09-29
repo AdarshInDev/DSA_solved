@@ -8,7 +8,7 @@ class Solution
 public:
     int removeDuplicates(vector<int> &nums)
     {
-        vector<int> removed;
+
         int cnt = 0;
         int sizee = nums.size();
         for (int i = 1; i < sizee; i++)

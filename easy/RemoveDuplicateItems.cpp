@@ -23,23 +23,22 @@ public:
                 nums[i - cnt] = nums[i];
         }
 
-        return sizee-cnt;
+        return sizee - cnt;
     }
-
 } obj1;
 
 int main()
 {
     vector<int> arr = {1, 1, 2, 2, 3, 5, 9, 9};
-    int n=arr.size();
+    int n = arr.size();
     cout << "array before removing duplicate items : ";
-    for (int i = 0; i <n ; i++)
+    for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
     }
     int ans = obj1.removeDuplicates(arr);
     cout << endl
-         << "number of elements removed :" << n-ans << endl;
+         << "number of elements removed :" << n - ans << endl;
     cout << "the array after removing duplicate items : ";
     for (int i = 0; i < ans; i++)
     {
